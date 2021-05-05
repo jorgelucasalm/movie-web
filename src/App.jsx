@@ -7,7 +7,6 @@ export default (props) =>(
    <>
     <Navbar placeholder="Digite o nome do filme" handleChange={(e) => console.log(e)}/>
     <MovieItem />
-    
    </>
 
 );

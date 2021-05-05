@@ -1,0 +1,65 @@
+img {
+        height: 230px;
+        width: 335px;
+}
+
+.list{
+    display: block;
+    margin: 3rem 3rem 0 3rem;
+}
+
+.card {
+    width: 33.33333%;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    padding: 5px;
+
+}
+
+.media-content{
+    display: flex;
+}
+
+.name{
+    margin-left: 0.4rem;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.genres{
+    
+    margin: 0.8rem 0.2rem 0.8rem 0;
+    padding: 0.3rem;
+
+    background-color: #fa7f72;
+    color: black;
+    font-size: 1rem;
+
+    border-radius: 2px;
+}
+
+.date{
+    margin: 0.8rem 0.2rem 0.8rem 0;
+    padding: 0.3rem;
+    font-size: 1rem;
+    
+    background-color: orange;
+    color: black;
+
+    border-radius: 2px;
+}
+
+.time{
+    background-color: #32323c;
+    color: white;
+    font-size: 1rem;
+    margin: 0.8rem 0.2rem 0.8rem 0;
+    
+    padding: 0.3rem;
+    width: max-content;
+    
+    border-radius: 2px;
+}
