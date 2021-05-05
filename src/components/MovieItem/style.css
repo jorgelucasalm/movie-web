@@ -4,18 +4,21 @@ img {
 }
 
 .list{
-    display: block;
+    display: flex;
+    flex-direction: wrap;
     margin: 3rem 3rem 0 3rem;
 }
 
 .card {
-    width: 33.33333%;
-    border-radius: 5px;
-    overflow: hidden;
     display: inline-block;
+
     margin-bottom: 1.5rem;
     padding: 5px;
+    width: 33.33%;
+    height: 100%;
 
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .media-content{
@@ -23,10 +26,11 @@ img {
 }
 
 .name{
-    margin-left: 0.4rem;
+    
+    width: 335px;
     font-family: Poppins;
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .genres{

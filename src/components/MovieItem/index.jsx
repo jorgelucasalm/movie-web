@@ -19,7 +19,16 @@ const MovieItem = (props) => {
                 </li>
                 <li class="card">
                     <img src={Image} alt="" />
-                    <p class="name">O Estranho Mundo de Jack</p>
+                    <p class="name">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</p>
+                    <div class="media-content">
+                        <p class="genres">Ação</p>
+                        <p class="date">2020</p>
+                        <p class="time">149 min</p>
+                    </div>
+                </li>
+                <li class="card">
+                    <img src={Image} alt="" />
+                    <p class="name">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</p>
                     <div class="media-content">
                         <p class="genres">Ação</p>
                         <p class="date">2020</p>
