@@ -1,12 +1,7 @@
-img {
-        height: 230px;
-        width: 335px;
-}
 
-.list{
-    display: flex;
-    flex-direction: wrap;
-    margin: 3rem 3rem 0 3rem;
+img {
+    height: 230px;
+    width: 335px;
 }
 
 .card {

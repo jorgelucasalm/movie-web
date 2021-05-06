@@ -1,42 +1,18 @@
 import React from 'react'
 import './style.css'
-import '../../assets/styles/global.css'
 import Image from "../../assets/public/tenet.jpg"
 
 const MovieItem = (props) => {
     return (
-        <>
-            <div class="list">
-                <li class="card">
-                    <img src={Image} alt="" />
-                    
-                    <p class="name">Vingadores</p>
-                    <div class="media-content">
-                        <p class="genres">Ação</p>
-                        <p class="date">2020</p>
-                        <p class="time">149 min</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src={Image} alt="" />
-                    <p class="name">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</p>
-                    <div class="media-content">
-                        <p class="genres">Ação</p>
-                        <p class="date">2020</p>
-                        <p class="time">149 min</p>
-                    </div>
-                </li>
-                <li class="card">
-                    <img src={Image} alt="" />
-                    <p class="name">As Crônicas de Nárnia: O Leão, a Feiticeira e o Guarda-Roupa</p>
-                    <div class="media-content">
-                        <p class="genres">Ação</p>
-                        <p class="date">2020</p>
-                        <p class="time">149 min</p>
-                    </div>
-                </li>
+        <li className="card">
+            <img src={Image} alt="" />
+            <p className="name">{props.title}</p>
+            <div className="media-content">
+                <p className="genres">Ação</p>
+                <p className="date">{props.year}</p>
+                <p className="time">149 min</p>
             </div>
-        </>
+        </li>
     )
 }
 

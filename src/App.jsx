@@ -1,12 +1,11 @@
 import React from 'react'
 import Navbar from './components/Navbar'
-import MovieItem from './components/MovieItem'
-import SearchBar from './components/SearchBar'
+import MovieList from './components/MovieList'
 
-export default (props) =>(
+export default () => (
    <>
-    <Navbar placeholder="Digite o nome do filme" handleChange={(e) => console.log(e)}/>
-    <MovieItem />
+      <Navbar />
+      <MovieList />
    </>
 
 );
