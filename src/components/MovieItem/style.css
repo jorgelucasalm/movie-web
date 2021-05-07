@@ -2,6 +2,14 @@
 img {
     height: 230px;
     width: 335px;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover{
+    filter: blur(2px);
 }
 
 .card {
