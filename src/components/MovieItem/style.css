@@ -1,15 +1,6 @@
 
-img {
-    height: 230px;
-    width: 335px;
-    border-radius: 2px;
-    overflow: hidden;
-    transition: all 0.3s ease;
-    cursor: pointer;
-}
-
-img:hover{
-    filter: blur(2px);
+::-webkit-scrollbar {
+    width: 0px;
 }
 
 .card {
@@ -22,6 +13,19 @@ img:hover{
 
     border-radius: 5px;
     overflow: hidden;
+}
+
+.image-movie {
+    height: 230px;
+    width: 335px;
+    border-radius: 2px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.image-movie:hover{
+    filter: blur(2px);
 }
 
 .media-content{
@@ -70,3 +74,36 @@ img:hover{
     
     border-radius: 2px;
 }
+
+.image-modal{
+    width: 100%;
+}
+
+
+.title-modal {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.description-modal{
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
+.trailer-modal{
+    font-size: 1.3rem;
+    color: violet;
+    text-decoration: none;
+}
+
+/* .close-modal{
+    display: absolute;
+    cursor: pointer;
+    bottom: -5rem;
+    right: 2rem;
+    font-size: 2rem;
+} */
+
+/* .modal-content{
+    padding: 1rem;
+} */

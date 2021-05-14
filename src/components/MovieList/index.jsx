@@ -3,9 +3,9 @@ import './style.css'
 import '../../assets/styles/global.css'
 import MovieItem from '../MovieItem'
 import api from '../../services/api'
-import Modal from '../Modal'
 
 export default class MovieList extends Component {
+    
 
     state = {
         movies: [],
@@ -21,12 +21,12 @@ export default class MovieList extends Component {
     }
 
     render() {
+        
         return (
-            <>  
-                <Modal />
-                <div className="list">
+            <> 
+                <div className="list rm">
                     {/* Mostrando todos os dados dentro de movies */}
-                    {this.state.movies.map(movie => <MovieItem key={movie._id} title={movie.title} year={movie.year} />)}
+                    {this.state.movies.map(movie => <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer} />)}
                 </div>
             </>
         )

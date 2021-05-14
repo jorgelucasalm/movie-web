@@ -1,0 +1,24 @@
+
+.modal{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.modal-content{
+    background-color: #252537;
+    padding: 3rem;
+}
+
+.image-modal{
+    width: 100%;
+}
+
+.title-modal {
+}
