@@ -2,7 +2,7 @@ import React from 'react'
 import '../../assets/styles/global.css'
 import './style.css'
 
-export default () => 
+const Index = () => 
 <>
     <nav>
         <h1>Listagem de filmes</h1>
@@ -14,3 +14,5 @@ export default () =>
     </div>
 
 </>
+
+export default Index;

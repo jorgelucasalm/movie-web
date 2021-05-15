@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react'
+import React, { Component } from 'react'
 import './style.css'
 import '../../assets/styles/global.css'
 import MovieItem from '../MovieItem'
