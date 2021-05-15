@@ -6,7 +6,6 @@ import api from '../../services/api'
 
 export default class MovieList extends Component {
     
-
     state = {
         movies: [],
     }

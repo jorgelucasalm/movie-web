@@ -1,9 +1,9 @@
 import React from 'react'
 import './style.css'
 import Image from "../../assets/public/tenet.jpg"
-import ReactModal from 'react-modal'
+import Modal from 'react-modal'
 
-ReactModal.setAppElement('#root');
+Modal.setAppElement('#root');
 
 const customStyles = {
     overlay: {
@@ -18,7 +18,7 @@ const customStyles = {
     },
     content: {
         backgroundColor: '#252537',
-        padding: '2rem',
+        padding: '0 2rem 2rem 2rem',
         border: 'none',
         top: '5rem',
         left: '20%',
@@ -44,7 +44,7 @@ const MovieItem = (props) => {
 
     return (
         <>
-            <ReactModal
+            <Modal
                 isOpen={modalIsOpen}
                 onRequestClose={closeModal}
                 style={customStyles}
@@ -53,12 +53,26 @@ const MovieItem = (props) => {
                     {/* <div className="close" >
                         <span className="close-modal" onClick={closeModal}>X</span>
                     </div> */}
+                    <div className="close-button" onClick={closeModal}><span>X</span></div>
                     <img className="image-modal" src={Image} alt="" />
-                    <h1 className="title-modal">{props.title}</h1>
+                    <div className="title-time">
+                        <h1 className="title-modal">{props.title}</h1>
+                        <span className="time-modal">149 min</span>
+                    </div>
+                    
+                    <div className="media-content">
+                        <p className="genres">Ação</p>
+                        <p className="date">{props.year}</p>
+                    </div>
+                    <div className="elenco-modal">
+                        <span className="elenco">Elenco: </span>
+                        <span>Keunu reves</span>
+                    </div>
                     <p className="description-modal">{props.sp}</p>
+
                     <a className="trailer-modal" href={props.tr} target="_blank">Veja o trailer aqui!</a>
                 </div>
-            </ReactModal>
+            </Modal>
             <li className="card">
                 <img className="image-movie" src={Image} onClick={openModal} alt="" />
                 <p className="name">{props.title}</p>

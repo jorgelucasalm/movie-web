@@ -75,19 +75,52 @@
     border-radius: 2px;
 }
 
+.close-button{
+    background-color: #252537;
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 57%;
+    position: fixed;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
 .image-modal{
+    margin-top: 3rem;
     width: 100%;
 }
 
+.title-time{
+    display: flex;
+    align-items:center ;
+}
+
+.time-modal{
+    width: max-content;
+    height: max-content;
+
+    background-color: #32323c;
+    color: white;
+    font-size: 1rem;
+    
+    padding: 0.3rem;
+    border-radius: 2px;
+}
 
 .title-modal {
+    margin: 0.5rem 1rem 0.5rem 0;
+}
+
+.elenco-modal{
     margin-top: 0.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 .description-modal{
     margin-bottom: 2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .trailer-modal{
