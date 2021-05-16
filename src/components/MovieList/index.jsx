@@ -18,6 +18,7 @@ function MovieList() {
 
     return (
         <>
+            <SearchBar/>
             <div className="list rm">
                 {/* Mostrando todos os dados dentro de movies */}
                 {movies.map(movie =>{
