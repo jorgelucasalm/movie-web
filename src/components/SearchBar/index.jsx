@@ -1,12 +1,14 @@
 import React from 'react'
+import './style.css'
 
-const SearchBar = (props) =>{
+const SearchBar = (props) => {
     return (
-        <input type='search'
-        className='search'
-        placeholder={props.placeholder}
-        onChange={props.handleChange}
-        />
+        <div className="search-box">
+            <div class="container-1">
+                <input type="search" id="search" placeholder="Digite o nome do filme..." />
+                <span class="icon"><i class="fa fa-search"></i></span>
+            </div>
+        </div>
     )
 }
 

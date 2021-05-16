@@ -1,34 +1,32 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import './style.css'
 import '../../assets/styles/global.css'
 import MovieItem from '../MovieItem'
 import api from '../../services/api'
+import SearchBar from '../SearchBar'
 
-export default class MovieList extends Component {
-    
-    state = {
-        movies: [],
-    }
+function MovieList() {
+
+    const [movies, setMovies] = useState([]);
 
     // Ler a api e salva em movies
-    constructor() {
-        super();
-        api.get('').then(movie => {
-            this.setState({ movies: movie.data });
-        })
+    useEffect(()=>{
+        api.get('').then((response)=>{
+            setMovies(response.data);
+        });
+    }, []);
 
-    }
-
-    render() {
-        
-        return (
-            <> 
-                <div className="list rm">
-                    {/* Mostrando todos os dados dentro de movies */}
-                    {this.state.movies.map(movie => <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer} />)}
-                </div>
-            </>
-        )
-    }
+    return (
+        <>
+            <div className="list rm">
+                {/* Mostrando todos os dados dentro de movies */}
+                {movies.map(movie =>{
+                    return <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer}/>;
+                })}
+            </div>
+        </>
+    )
 
 }
+
+export default MovieList;

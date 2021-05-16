@@ -1,20 +1,50 @@
-nav{  
+.navbar{  
     background-color: #252537;
     overflow: hidden;
     height: 4rem; 
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 3rem;
 }
 
-nav h1 {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 1.4rem;
+.navbar img{  
+    margin-right: 3rem;
 }
+
+.logo {
+    margin-right: 2rem;
+    margin-left: 3rem;
+    text-decoration: none;
+
+    color: #f2f2f2;
+    cursor: pointer;
+
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.filter-ul{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.filter-li{
+    padding: 1rem;
+    cursor: pointer;
+    
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+}
+
+
 
 .description {
-    font-size: 1.4rem;
-    margin: 0 2rem 0 2rem;
+    font-size: 1.2rem;
 }
+
