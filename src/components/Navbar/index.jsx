@@ -12,7 +12,7 @@ const Index = () =>
                 <li className="filter-li" >Filmes</li>
                 <li className="filter-li">Series</li>
             </ul>
-            <img width="24" height="24" src={Icon}></img>
+            <img width="24" height="24" src={Icon} alt=""/>
         </nav>
 
         <div className="description rm">

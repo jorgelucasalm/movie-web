@@ -8,21 +8,34 @@ import SearchBar from '../SearchBar'
 function MovieList() {
 
     const [movies, setMovies] = useState([]);
+    const [search, setSearch] = useState('');
+    const [filter, setFilter] = useState([]);
 
     // Ler a api e salva em movies
-    useEffect(()=>{
-        api.get('').then((response)=>{
+    useEffect(() => {
+        api.get('').then((response) => {
             setMovies(response.data);
         });
     }, []);
 
+    // Filtro por nome
+    useEffect(() => {
+        setFilter(
+            movies.filter(movie => {
+                return movie.title.toLowerCase().includes( search.toLowerCase() );
+            })
+        )
+    }, [search, movies]);
+
+
+
     return (
         <>
-            <SearchBar/>
+            <SearchBar onChange={e => setSearch(e.target.value)} />
             <div className="list rm">
                 {/* Mostrando todos os dados dentro de movies */}
-                {movies.map(movie =>{
-                    return <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer}/>;
+                {filter.map(movie => {
+                    return <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer} />;
                 })}
             </div>
         </>
