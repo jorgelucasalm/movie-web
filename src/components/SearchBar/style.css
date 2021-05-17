@@ -4,7 +4,7 @@
     justify-content: center;
 }
 
-.container-1 {
+.search-container {
     width: 600px;
     white-space: normal;
     position: relative;
@@ -23,20 +23,11 @@
 }
 
 .icon {
-    position: absolute;
     margin-left: -50px;
     margin-top: 17px;
     z-index: 1;
     color: #4f5b66;
-    -webkit-transition: all .55s ease;
-    -moz-transition: all .55s ease;
-    -ms-transition: all .55s ease;
-    -o-transition: all .55s ease;
     transition: all .55s ease;
-}
-
-#search:hover, #search:focus, #search:active {
-    outline: none;
 }
 
 .container-1:hover .icon {

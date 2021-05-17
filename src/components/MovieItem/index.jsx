@@ -69,9 +69,9 @@ const MovieItem = (props) => {
                         <span className="elenco">Elenco: </span>
                         <span>Keunu reves</span>
                     </div>
-                    <p className="description-modal">{props.sp}</p>
+                    <p className="description-modal">{props.synopsis}</p>
 
-                    <a className="trailer-modal" href={props.tr} target="_blank" rel="noreferrer">Veja o trailer aqui!</a>
+                    <a className="trailer-modal" href={props.trailer} target="_blank" rel="noreferrer">Veja o trailer aqui!</a>
                 </div>
             </Modal>
             <li className="card">

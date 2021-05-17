@@ -35,7 +35,7 @@ function MovieList() {
             <div className="list rm">
                 {/* Mostrando todos os dados dentro de movies */}
                 {filter.map(movie => {
-                    return <MovieItem key={movie._id} title={movie.title} year={movie.year} sp={movie.synopsis} tr={movie.trailer} />;
+                    return <MovieItem key={movie._id} {...movie} />;
                 })}
             </div>
         </>
