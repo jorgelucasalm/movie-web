@@ -1,7 +1,9 @@
 import React from 'react'
 import './style.css'
+import '../../assets/styles/global.css'
 import Image from "../../assets/public/tenet.jpg"
 import Modal from 'react-modal'
+import ModalContent from '../Modal'
 
 Modal.setAppElement('#root');
 
@@ -22,9 +24,9 @@ const customStyles = {
         padding: '0 2rem 2rem 2rem',
         border: 'none',
         top: '5rem',
-        left: '20%',
-        right: '20%',
-        width: '60%',
+        left: '25%',
+        right: '25%',
+        width: '50%',
         display: 'flex',
         alignItems: 'center',
         flexDirection: 'column',
@@ -50,39 +52,19 @@ const MovieItem = (props) => {
                 onRequestClose={closeModal}
                 style={customStyles}
             >
-                <div className="modal-content">
-                    {/* <div className="close" >
-                        <span className="close-modal" onClick={closeModal}>X</span>
-                    </div> */}
-                    <div className="close-button" onClick={closeModal}><span>X</span></div>
-                    <img className="image-modal" src={Image} alt="" />
-                    <div className="title-time">
-                        <h1 className="title-modal">{props.title}</h1>
-                        <span className="time-modal">149 min</span>
-                    </div>
-                    
+                <ModalContent {...props} closeModalButton={closeModal}></ModalContent>
+            </Modal>
+            
+                <li className="card">
+                    <img className="image-movie" src={Image} onClick={openModal} alt="" />
+                    <p className="name">{props.title}</p>
                     <div className="media-content">
                         <p className="genres">Ação</p>
                         <p className="date">{props.year}</p>
+                        <p className="time">149 min</p>
                     </div>
-                    <div className="elenco-modal">
-                        <span className="elenco">Elenco: </span>
-                        <span>Keunu reves</span>
-                    </div>
-                    <p className="description-modal">{props.synopsis}</p>
-
-                    <a className="trailer-modal" href={props.trailer} target="_blank" rel="noreferrer">Veja o trailer aqui!</a>
-                </div>
-            </Modal>
-            <li className="card">
-                <img className="image-movie" src={Image} onClick={openModal} alt="" />
-                <p className="name">{props.title}</p>
-                <div className="media-content">
-                    <p className="genres">Ação</p>
-                    <p className="date">{props.year}</p>
-                    <p className="time">149 min</p>
-                </div>
-            </li>
+                </li>
+          
 
 
         </>

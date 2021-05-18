@@ -27,15 +27,13 @@ function MovieList() {
         )
     }, [search, movies]);
 
-
-
     return (
         <>
             <SearchBar onChange={e => setSearch(e.target.value)} />
             <div className="list rm">
                 {/* Mostrando todos os dados dentro de movies */}
                 {filter.map(movie => {
-                    return <MovieItem key={movie._id} {...movie} />;
+                    return <MovieItem key={movie._id} {...movie} />
                 })}
             </div>
         </>

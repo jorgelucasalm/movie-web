@@ -8,8 +8,8 @@
 
     margin-bottom: 1.5rem;
     padding: 5px;
-    width: 33.33%;
     height: 100%;
+    width: 33.33%;
 
     border-radius: 5px;
     overflow: hidden;
@@ -24,19 +24,12 @@
     cursor: pointer;
 }
 
-.image-movie:hover{
-    filter: blur(2px);
-}
-
 .media-content{
     display: flex;
 }
 
-.name{
-    width: 335px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1.3rem;
+.image-movie:hover{
+    filter: blur(2px);
 }
 
 .genres{
@@ -49,6 +42,13 @@
     font-size: 1rem;
 
     border-radius: 2px;
+}
+
+.name{
+    width: 335px;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.3rem;
 }
 
 .date{
@@ -74,59 +74,6 @@
     border-radius: 2px;
 }
 
-.close-button{
-    background-color: #252537;
-    padding: 1rem 1rem 0.5rem 1rem;
-    width: 57%;
-    position: fixed;
-    font-size: 1.5rem;
-    cursor: pointer;
-    display: flex;
-    flex-direction: row-reverse;
-    overflow: hidden;
-}
-
-.image-modal{
-    margin-top: 3rem;
-    width: 100%;
-}
-
-.title-time{
-    display: flex;
-    align-items:center ;
-}
-
-.time-modal{
-    width: max-content;
-    height: max-content;
-
-    background-color: #32323c;
-    color: white;
-    font-size: 1rem;
-    
-    padding: 0.3rem;
-    border-radius: 2px;
-}
-
-.title-modal {
-    margin: 0.5rem 1rem 0.5rem 0;
-}
-
-.elenco-modal{
-    margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.description-modal{
-    margin-bottom: 2rem;
-    font-size: 1rem;
-}
-
-.trailer-modal{
-    font-size: 1.3rem;
-    color: violet;
-    text-decoration: none;
-}
 
 /* .close-modal{
     display: absolute;

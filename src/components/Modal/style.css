@@ -1,24 +1,77 @@
 
-.modal{
-    background-color: rgba(0,0,0,0.4);
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
+.close-button{
+    position: fixed;
+    background-color: #252537;
+    font-size: 1.5rem;
+    padding: 1rem 1rem 0.5rem 1rem;
+    width: 38rem;
+
+    cursor: pointer;
+
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
 }
 
-.modal-content{
-    background-color: #252537;
-    padding: 3rem;
-}
 
 .image-modal{
+    margin-top: 3rem;
     width: 100%;
+}
+
+.title-time{
+    display: flex;
+    align-items:center ;
+}
+
+.time-modal{
+    width: max-content;
+    height: max-content;
+
+    background-color: #32323c;
+    color: white;
+    font-size: 1rem;
+    
+    padding: 0.3rem;
+    border-radius: 2px;
 }
 
 .title-modal {
+    margin: 0.5rem 1rem 0.5rem 0;
+    font-family: Poppins;
+    font-weight: 700;
+}
+
+
+.elenco-modal{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.actors{
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.elenco-names{
+    width: max-content;
+    height: max-content;
+
+    background-color: #9b111e;
+    color: white;
+    
+    margin-right: 0.5rem;
+    padding: 0.3rem;
+    border-radius: 2px;
+}
+
+.description-modal{
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.trailer-modal{
+    font-size: 1.3rem;
+    color: violet;
+    text-decoration: none;
 }
