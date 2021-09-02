@@ -1,18 +1,18 @@
-.navbar{  
-    background-color: #252537;
-    overflow: hidden;
-    height: 4rem; 
-    display: flex;
-    align-items: center;
+nav {
+    background-color: var(--secondary-color);
+    width: 100%;
 }
 
-.navbar img{  
-    margin-right: 3rem;
+.navbar{ 
+    background-color: var(--secondary-color);
+    overflow: hidden;   
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10%;
 }
 
 .logo {
-    margin-right: 2rem;
-    margin-left: 3rem;
     text-decoration: none;
 
     color: #f2f2f2;
@@ -23,28 +23,34 @@
     font-size: 1.5rem;
 }
 
-.filter-ul{
+nav ul{
     list-style: none;
     height: 100%;
-    display: flex;
-    flex: 1 1 auto;
 }
 
-.filter-li{
-    padding: 1rem;
-    cursor: pointer;
-    
+nav ul li{
     font-family: Poppins;
     font-weight: 700;
     font-size: 1.2rem;
+    
+    padding: 0 20px;
+    cursor: pointer;
 
-    display: flex;
-    align-items: center;
+    display: inline-block;
 }
-
-
 
 .description {
-    font-size: 1.2rem;
+    padding: 3rem 0 2rem 10%;
+    line-height: 1.4;
 }
 
+.description h2{
+    padding-bottom: 1rem;
+    font-size: 2.2rem;
+    line-height: 1.4;
+    width: 100%;
+}
+
+.description p {
+    width: 40rem;
+}
